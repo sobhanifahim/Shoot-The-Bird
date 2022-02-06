@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="BirdShoot.css">
+    <title>Shoot the chikens</title>
+</head>
+<body>
+<div id="father">
+  <div id="background" onclick="shtSnd()">   <!--Background for game-->
+    <div id="cs"> 
+      <div id="countdown">Countdown: <b id="cnt">10</b></div>   <!--Coundown and Score count-->
+      <div id="score">Score: <b id="scr">0</b></div>
+
+    </div>
+    <div id="parent">
+            <div id="bomb1" onclick="bombblast()"></div>     <!--bomb and birds-->
+            <div id="chk1" onclick="shoot('chk1');ckdicon('cooked1')"></div>
+           
+            <div id="chk2" onclick="shoot('chk2');ckdicon('cooked2')"></div>
+            <div id="chk3" onclick="shoot('chk3');ckdicon('cooked3')"></div>
+            <div id="bomb2" onclick="bombblast()"></div>
+            <div id="chk4" onclick="shoot('chk4');ckdicon('cooked4')"></div>
+            
+            <div id="chk5" onclick="shoot('chk5');ckdicon('cooked5')"></div>
+            <div id="bomb3" onclick="bombblast()"></div>
+    </div>
+  </div>
+
+  <div id="block">      <!--showing cooked bird after shooting-->
+    <div id="cooked1"></div>
+    <div id="cooked2"></div>
+    <div id="cooked3"></div>
+    <div id="cooked4"></div>
+    <div id="cooked5"></div>
+  </div>
+
+  <div id="field" onclick="shtSnd()"></div>
+
+
+
+  <div id="GmOvr">Game Over
+    <div id="GOSCR">Score: <b id="fnlscr">0</b></div>
+</div>
+</div>
+    <script src="BirdShoot.js"></script>
+</body>
+</html>

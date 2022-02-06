@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#background{
+    height: 500px;
+    width: 1000px;
+    background-size: 1000px 500px;
+    opacity: 1;
+    background-color: rgb(43, 180, 180);
+    margin-left: 250px;
+    margin-top: 100px;
+    user-select: none;
+    -ms-user-select: none;
+    box-shadow: 5px 5px 1px 1px grey;
+    cursor: url(rsz_1aim.cur), default;
+}
+#father{
+    position: relative;
+}
+#field{
+    height: 225px;
+    width: 1100px;
+    background-color: yellowgreen;
+    background: url(grass.png) no-repeat;
+    background-size: 1100px 225px;
+    margin-left: 200px;
+    position: absolute;
+    top: 285px;
+    cursor: url(rsz_1aim.cur), default;
+}
+#parent{
+    position: relative;
+    display: flex;
+}
+#chk1{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    background: url(chicken.gif) no-repeat;
+    background-size: 80px 80px;
+    position: relative;
+    margin-top: 330px;
+    left: 50px;
+    animation: jump 4s infinite linear;
+
+}
+#chk2{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    background: url(crow.gif) no-repeat;
+    background-size: 80px 80px;
+    position: absolute;
+    margin-top: 330px;
+    left: 220px;
+    animation: jump 4s infinite linear;
+    animation-delay: 13s;
+ 
+}
+#chk3{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    position: absolute;
+    background: url(duck.gif) no-repeat;
+    background-size: 80px 80px;
+    margin-top: 330px;
+    left: 390px;
+    animation: jump 4s infinite linear;
+    animation-delay: 7s;
+}
+#chk4{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    background: url(crow.gif) no-repeat;
+    background-size: 80px 80px;
+    position: absolute;
+    margin-top: 330px;
+    left: 560px;
+    animation: jump 4s infinite linear;
+    animation-delay: 15s;
+}
+#chk5{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    position: absolute;
+    background: url(chicken.gif) no-repeat;
+    background-size: 80px 80px;
+    margin-top: 330px;
+    left: 730px;
+    animation: jump 4s infinite linear;
+    animation-delay: 9s;
+
+}
+@keyframes jump{
+
+    20%{
+       bottom: 50px;
+       margin-left: 50px;
+    }
+    40%{
+        bottom: 120px;
+        margin-left: 70px;
+    }
+    60%{
+        bottom: 140px;
+        margin-left: 90px;
+    }
+    70%{
+        bottom: 150px;
+        margin-left: 120px;
+    }
+    80%{
+        bottom: 35px;
+        margin-left: 140px;
+    }
+    90%{
+        bottom: 20px;
+        margin-left: 160px;
+    }
+    100%{
+        bottom: 0px;
+        margin-left: 180px;
+    }
+}
+@keyframes jumpback{
+    100%{
+        bottom: 0px;
+        margin-left: 0px;
+    }
+}
+@keyframes throwbomb{
+    25%{
+        bottom: 50px;
+        margin-left: 150px;
+        transform: rotate(360deg);
+    }
+    50%{
+        bottom: 150px;
+        margin-left: 250px;
+        transform: rotate(720deg);
+    }
+    60%{
+        bottom: 150px;
+        margin-left: 300px;
+        transform: rotate(1080deg);
+    }
+    75%{
+        bottom: 50px;
+        margin-left: 350px;
+        transform: rotate(1440deg);
+    }
+    85%{
+        bottom: 25px;
+        margin-left: 400px;
+        transform: rotate(1800deg);
+    }
+    100%{
+        bottom: 0px;
+        margin-left: 450px;
+        transform: rotate(2160deg);
+    }
+}
+@keyframes throwbomb2{
+    15%{
+        bottom: 25px;
+        right: 75px;
+        transform: rotate(360deg);
+    }
+    
+    25%{
+        bottom: 50px;
+        right: 150px;
+        transform: rotate(720deg);
+    }
+    50%{
+        bottom: 150px;
+        right: 250px;
+        transform: rotate(1080deg);
+    }
+    60%{
+        bottom: 150px;
+        right: 300px;
+        transform: rotate(1440deg);
+    }
+    75%{
+        bottom: 50px;
+        right: 350px;
+        transform: rotate(1800deg);
+    }
+    85%{
+        bottom: 25px;
+        right: 400px;
+        transform: rotate(2160deg);
+    }
+    100%{
+        bottom: 0px;
+        right: 450px;
+        transform: rotate(2520deg);
+    }
+}
+@keyframes throwup{
+    20%{
+        bottom: 50px;
+    }
+    40%{
+        bottom: 150px;
+        transform: rotate(-20deg);
+    }
+    60%{
+        bottom: 150px;
+        transform: rotate(-50deg);
+    }
+    80%{
+        bottom: 50px;
+        transform: rotate(-80deg);
+    }
+    90%{
+        bottom: 30px;
+        transform: rotate(-90deg);
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
+#cs{
+    display: flex;
+}
+#countdown{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: blue;
+    margin-left: 50px;
+    font-weight: bolder;
+}
+#cnt{
+    color: red;
+}
+#score{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: blue;
+    margin-left: 600px;
+    font-weight: bolder;
+}
+#scr{
+    color: rgb(133, 221, 0);
+}
+#GmOvr{
+    height: 500px;
+    width: 1000px;
+    background-color: white;
+    margin-left: 250px;
+    color: red;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    top: 0px;
+    position: absolute;
+    font-weight: bolder;
+    text-align: center;
+    opacity: 0.95;
+    box-shadow: 5px 5px 1px 1px grey;
+
+
+
+}
+#GOSCR{
+    color:blue;
+    margin-top: 50px;
+}
+#fnlscr{
+    color: yellowgreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#block{
+    position: relative;
+    display: flex;
+    top: -93px;
+    margin-left: 250px;
+    cursor: url(rsz_1aim.cur), default;
+}
+#cooked1{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    background: url(cookedChicken.png) no-repeat;
+    background-size: 40px 40px;
+    position: absolute;
+    left: 75px;
+    animation: jump 4s infinite linear;
+}
+#cooked2{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    background: url(cookedChicken.png) no-repeat;
+    background-size: 40px 40px;
+    position: absolute;
+    left: 240px;
+    animation: jump 4s infinite linear;
+    animation-delay: 13s;
+
+    
+}
+#cooked3{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    background: url(cookedChicken.png) no-repeat;
+    background-size: 40px 40px;
+    position: absolute;
+    left: 420px;
+    animation: jump 4s infinite linear;
+    animation-delay: 7s;
+    
+}
+#cooked4{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    background: url(cookedChicken.png) no-repeat;
+    background-size: 40px 40px;
+    position: absolute;
+    left: 590px;
+    animation: jump 4s infinite linear;
+    animation-delay: 15s;
+}
+#cooked5{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    background: url(cookedChicken.png) no-repeat;
+    background-size: 40px 40px;
+    position: absolute;
+    left: 750px;
+    animation: jump 4s infinite linear;
+    animation-delay: 9s;
+}
+
+
+#bomb1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    background: url(bombckn.gif) no-repeat;
+    background-size: 100px 100px;
+    position: absolute;
+    margin-top: 330px;
+    left: 20px;
+    animation: throwbomb 4s infinite linear;
+}
+#bomb2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    background: url(bombckn.gif) no-repeat;
+    background-size: 100px 100px;
+    margin-top: 330px;
+    left: 450px;
+    animation: throwup 4s infinite ease-out;
+}
+#bomb3{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    background: url(bombckn.gif) no-repeat;
+    background-size: 100px 100px;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 900px;
+    animation: throwbomb2 4s infinite linear;
+    
+    
+}
